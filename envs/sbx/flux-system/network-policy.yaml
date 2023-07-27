@@ -4,10 +4,10 @@ metadata:
   name: "block-nginx"
   namespace: nginx-namespace
 specs:
-  endpointSelector:
-    matchLabels:
-      app: nginx
-  ingress:
-    - fromEndpoints:
-        - matchLabels:
-          blocked: "true"
+  - endpointSelector:
+      matchLabels:
+        app: nginx
+    ingress:
+      - fromEndpoints:
+          - matchLabels:
+            blocked: "true"
