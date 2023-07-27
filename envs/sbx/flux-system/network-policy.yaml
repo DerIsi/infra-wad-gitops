@@ -10,4 +10,4 @@ specs:
     ingress:
       - fromEndpoints:
           - matchLabels:
-            blocked: "true"
+              blocked: "true"
