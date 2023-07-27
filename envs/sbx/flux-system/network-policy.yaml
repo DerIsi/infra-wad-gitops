@@ -2,7 +2,7 @@ apiVersion: "cilium.io/v2"
 kind: CiliumNetworkPolicy
 metadata:
   name: "block-nginx"
-  namespace: nginx-namespace
+  namespace: nginx
 specs:
   - endpointSelector:
       matchLabels:
