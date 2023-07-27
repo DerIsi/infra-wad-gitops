@@ -3,7 +3,7 @@ kind: CiliumNetworkPolicy
 metadata:
   name: "block-nginx"
   namespace: nginx-namespace
-spec:
+specs:
   endpointSelector:
     matchLabels:
       app: nginx
